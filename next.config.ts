@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+// next.config.js
+const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://sma.sikedev.in/api/:path*", // your backend
+      },
+    ]
+  },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+module.exports = nextConfig
 
 export default nextConfig;
