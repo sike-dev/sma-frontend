@@ -1,5 +1,5 @@
 import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
-
+import Image  from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -23,7 +23,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ModeToggle } from "./widgets/mode-toggle";
-import Image from "next/image";
 
 interface MenuItem {
   title: string;
@@ -55,10 +54,10 @@ interface Navbar1Props {
 
 const Navbar1 = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://www.svgviewer.dev/s/5n2HJiO8",
+    url: "/",
+    src: "https://rawcdn.githack.com/sike-dev/sma-frontend/099c2d8f406c0c407c2303f7cb0495f5cb20b28f/public/sikedev.svg",
     alt: "logo",
-    title: "sikedev.",
+    title: "",
   },
 }: Navbar1Props) => {
   return (
