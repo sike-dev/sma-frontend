@@ -4,8 +4,8 @@ import { SignupForm } from '@/components/auth/SignUpForm'
 export default function SignUpPage() {
   return (
     <AuthLayout
-      title="Sign in to your account"
-      subtitle="Welcome back! Please sign in to continue."
+      title="SMA"
+      subtitle="A swiss army knife for developers. Create your account now."
     >
       <SignupForm />
     </AuthLayout>

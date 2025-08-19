@@ -55,7 +55,7 @@ interface Navbar1Props {
 const Navbar1 = ({
   logo = {
     url: "/",
-    src: "https://rawcdn.githack.com/sike-dev/sma-frontend/099c2d8f406c0c407c2303f7cb0495f5cb20b28f/public/sikedev.svg",
+    src: "https://rawcdn.githack.com/sike-dev/sma-frontend/4e0dc066cdafb7d5e0b6ee1d14930f8d83f37024/public/sikedev-black.svg",
     alt: "logo",
     title: "",
   },
@@ -68,9 +68,11 @@ const Navbar1 = ({
           <div className="flex items-center gap-6">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <img
+              <Image
                 src={logo.src}
-                className="max-h-8 dark:invert"
+                width={100}
+                height={100}
+                className="max-h-8 dark:invert mx-5"
                 alt={logo.alt}
               />
               <span className="text-lg font-semibold tracking-tighter">

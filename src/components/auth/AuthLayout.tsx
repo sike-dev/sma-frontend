@@ -17,7 +17,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
   return (
 
     <div className="min-h-screen flex flex-col">
-        <Navbar1 />
+        <div ><Navbar1 /></div>
         
       {/* Right side - Auth Form */}
       <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-20 xl:px-24">
@@ -26,11 +26,11 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
             <div className="lg:hidden text-center mb-8">
               <h1 className="text-3xl font-bold text-gray-900">Sike</h1>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+            <h2 className="text-4xl font-bold tracking-tight text-gray-500 justify-center text-center">
               {title}
             </h2>
             {subtitle && (
-              <p className="mt-2 text-sm text-gray-600">{subtitle}</p>
+              <p className="mt-2 text-sm text-gray-400 justify-center text-center">{subtitle}</p>
             )}
           </div>
 

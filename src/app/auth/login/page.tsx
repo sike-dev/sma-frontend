@@ -4,8 +4,8 @@ import { LoginForm } from '@/components/auth/LoginForm'
 export default function LoginPage() {
   return (
     <AuthLayout
-      title="Sign in"
-      subtitle=""
+      title="SMA"
+      subtitle="A swiss army knife for developers."
     >
       <LoginForm />
     </AuthLayout>
